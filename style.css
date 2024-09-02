@@ -97,7 +97,7 @@
 /* Styling för kontaktsektionen */
 .contact-section {
   padding: 50px 20px;
-  background-color: rgb(36, 147, 162, 0.24%);
+  background-color: rgb(36, 147, 162, 0.24);
   text-align: center;
 }
 
@@ -131,7 +131,7 @@ form textarea {
 
 form button {
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 15px;
   color: white;
   background-color: #dcb13c;
   border: none;
@@ -141,11 +141,15 @@ form button {
 }
 
 form button:hover {
-  background-color: #555;
+  background-color: #dba50e;
 }
 
 /* För mobil vy */
 @media (max-width: 768px) {
+  .home-content {
+    padding-top: 12rem; /* Justera detta värde för att passa din design */
+  }
+
   .select-container {
     grid-template-columns: repeat(2, 1fr); /* Två kolumner på mobila enheter */
   }
@@ -158,6 +162,11 @@ form button:hover {
     grid-column: span 2;
     margin-top: 20px;
     /* margin-left: 10rem; */
+  }
+  form button {
+    padding: 10px 15px;
+    margin-top: 0.6rem;
+    font-size: 14px;
   }
 }
 
@@ -172,5 +181,10 @@ form button:hover {
 
   .select-container button {
     grid-column: span 1; /* Knappen är i en kolumn */
+  }
+  form button {
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 3px;
   }
 }
