@@ -22,25 +22,27 @@
 .home-content h3 {
   font-size: 48px;
   margin-bottom: 10px;
+  margin-top: -22rem;
   color: #dcb13c;
   font-family: "Lucida Handwriting", cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .home-content h6 {
   font-size: 20px;
   margin-bottom: 15px;
   font-family: "Lucida Bright", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .home-content p {
   font-size: 15px;
   font-family: "Lucida Bright", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-.home-content h3,
-.home-content h6,
-.home-content p {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+.text-container {
+  background-color: rgba(197, 197, 197, 47%);
 }
 
 /* Styling för kontaktsektionen */
