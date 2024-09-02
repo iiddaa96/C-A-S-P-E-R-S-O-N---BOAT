@@ -32,32 +32,35 @@
   font-size: 20px;
   margin-bottom: 15px;
   font-family: "Lucida Bright", serif;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
 }
 
 .home-content p {
   font-size: 15px;
   font-family: "Lucida Bright", serif;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .text-container {
-  background-color: rgba(197, 197, 197, 47%);
+  background-color: rgba(197, 197, 197, 0.47);
 }
 
 .select-container {
-  font-family: "Lucida Handwriting", cursive;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 5px;
+  font-family: "Lucida Handwriting", cursive;
   margin-top: 5rem;
 }
 
 .select-container div {
-  background-color: rgba(197, 197, 197, 47%);
+  background-color: rgba(197, 197, 197, 0.47);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   padding: 10px 20px;
   border-radius: 3px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .select-container button {
@@ -69,13 +72,15 @@
   border-radius: 5px;
   cursor: pointer;
   font-family: "Lucida Bright", serif;
+  grid-column: span 1;
 }
+
 .select-container button:hover {
   background-color: #dba50e;
 }
 
 .select-container div:hover {
-  background-color: rgba(197, 197, 197, 80%);
+  background-color: rgba(197, 197, 197, 0.8);
 }
 
 .arrow-down {
@@ -92,7 +97,7 @@
 /* Styling för kontaktsektionen */
 .contact-section {
   padding: 50px 20px;
-  background-color: rgb(36, 147, 162, 24%);
+  background-color: rgb(36, 147, 162, 0.24%);
   text-align: center;
 }
 
@@ -137,4 +142,35 @@ form button {
 
 form button:hover {
   background-color: #555;
+}
+
+/* För mobil vy */
+@media (max-width: 768px) {
+  .select-container {
+    grid-template-columns: repeat(2, 1fr); /* Två kolumner på mobila enheter */
+  }
+
+  .select-container div {
+    grid-column: span 1; /* Varje div ska vara en kolumn */
+  }
+
+  .select-container button {
+    grid-column: span 2;
+    margin-top: 20px;
+    /* margin-left: 10rem; */
+  }
+}
+
+@media (max-width: 480px) {
+  .select-container {
+    grid-template-columns: 1fr; /* En kolumn på mycket små skärmar */
+  }
+
+  .select-container div {
+    grid-column: span 1; /* Varje div ska vara en kolumn */
+  }
+
+  .select-container button {
+    grid-column: span 1; /* Knappen är i en kolumn */
+  }
 }
