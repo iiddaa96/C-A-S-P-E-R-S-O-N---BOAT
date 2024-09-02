@@ -7,31 +7,40 @@
 /* Styling för startsidan */
 .home-content {
   height: 100vh;
-  background-image: url("img/båt1.jpg"); /* Sätt din egen bild här */
+  background-image: url("https://media.gadventures.com/media-server/dynamic/admin/content_pages/sailing-tours-social.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
+  padding: 0 20px;
 }
 
 .home-content h3 {
   font-size: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #dcb13c;
   font-family: "Lucida Handwriting", cursive;
 }
+
 .home-content h6 {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-family: "Lucida Bright", serif;
 }
 
 .home-content p {
   font-size: 15px;
   font-family: "Lucida Bright", serif;
+}
+
+.home-content h3,
+.home-content h6,
+.home-content p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 /* Styling för kontaktsektionen */
