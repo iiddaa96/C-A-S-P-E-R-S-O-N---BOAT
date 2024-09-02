@@ -1,7 +1,7 @@
 /* CSS för header, hamburgare menyn */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Lucida Bright", serif;
 }
 
 .header-container {
@@ -10,7 +10,6 @@ body {
   align-items: center;
   padding: 10px;
   background-color: white;
-  /* color: black; */
 }
 
 /* Logotyp stil */
@@ -42,7 +41,7 @@ body {
 }
 
 .desktop-menu ul li a:hover {
-  background-color: #555;
+  background-color: rgb(196, 222, 255);
 }
 
 /* Mobil-meny */
