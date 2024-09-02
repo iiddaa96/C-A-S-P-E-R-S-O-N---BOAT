@@ -25,7 +25,7 @@
   margin-top: -22rem;
   color: #dcb13c;
   font-family: "Lucida Handwriting", cursive;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  text-shadow: 2px 2px 4px rgba(220, 177, 60, 0.4);
 }
 
 .home-content h6 {
@@ -76,6 +76,17 @@
 
 .select-container div:hover {
   background-color: rgba(197, 197, 197, 80%);
+}
+
+.arrow-down {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 8px; /* Avstånd mellan texten och pilen */
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid black; /* Färg på pilen */
+  vertical-align: middle; /* Justerar pilens vertikala position om det behövs */
 }
 
 /* Styling för kontaktsektionen */
