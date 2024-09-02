@@ -45,6 +45,39 @@
   background-color: rgba(197, 197, 197, 47%);
 }
 
+.select-container {
+  font-family: "Lucida Handwriting", cursive;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 5rem;
+}
+
+.select-container div {
+  background-color: rgba(197, 197, 197, 47%);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+
+.select-container button {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: white;
+  background-color: #dcb13c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Lucida Bright", serif;
+}
+.select-container button:hover {
+  background-color: #dba50e;
+}
+
+.select-container div:hover {
+  background-color: rgba(197, 197, 197, 80%);
+}
+
 /* Styling för kontaktsektionen */
 .contact-section {
   padding: 50px 20px;
