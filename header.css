@@ -14,7 +14,11 @@ body {
 
 /* Logotyp stil */
 .logo {
-  font-size: 1.5em;
+  width: 200px; /* Justera bredden på logotypen */
+  height: 60px; /* Justera höjden på logotypen */
+  background-size: contain; /* Se till att bilden är skalad korrekt */
+  background-repeat: no-repeat; /* Se till att bilden inte upprepas */
+  background-position: center; /* Se till att bilden är centrerad */
 }
 
 /* Desktop-meny */
@@ -103,6 +107,9 @@ body {
 
 /* Visa desktop-menyn och dölja mobil-menyn vid större skärmar */
 @media (min-width: 768px) {
+  .logo {
+    background-image: url("img/logga-liten.png"); /* Länk till desktop-bilden */
+  }
   .desktop-menu {
     display: block;
   }
@@ -114,6 +121,9 @@ body {
 
 /* Visa mobil-menyn vid mindre skärmar */
 @media (max-width: 767px) {
+  .logo {
+    background-image: url("img/kompass-liten.png"); /* Länk till mobilbilden */
+  }
   .menu-icon {
     display: flex;
   }
