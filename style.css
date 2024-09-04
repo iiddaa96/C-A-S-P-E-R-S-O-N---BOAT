@@ -154,15 +154,15 @@ form button:hover {
 /* För mobil vy */
 @media (max-width: 768px) {
   .home-content {
-    padding-top: 12rem; /* Justera detta värde för att passa din design */
+    padding-top: 12rem;
   }
 
   .select-container {
-    grid-template-columns: repeat(2, 1fr); /* Två kolumner på mobila enheter */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .select-container div {
-    grid-column: span 1; /* Varje div ska vara en kolumn */
+    grid-column: span 1;
   }
 
   .select-container button {
@@ -181,15 +181,15 @@ form button:hover {
 
 @media (max-width: 480px) {
   .select-container {
-    grid-template-columns: 1fr; /* En kolumn på mycket små skärmar */
+    grid-template-columns: 1fr;
   }
 
   .select-container div {
-    grid-column: span 1; /* Varje div ska vara en kolumn */
+    grid-column: span 1;
   }
 
   .select-container button {
-    grid-column: span 1; /* Knappen är i en kolumn */
+    grid-column: span 1;
   }
   form button {
     padding: 6px 10px;
