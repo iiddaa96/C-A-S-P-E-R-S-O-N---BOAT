@@ -129,6 +129,11 @@ form textarea {
   width: 100%;
 }
 
+form textarea {
+  height: 100px;
+  resize: none;
+}
+
 form button {
   padding: 10px 20px;
   font-size: 15px;
@@ -138,6 +143,8 @@ form button {
   border-radius: 5px;
   cursor: pointer;
   font-family: "Lucida Bright", serif;
+  width: 45%;
+  margin-left: 10rem;
 }
 
 form button:hover {
