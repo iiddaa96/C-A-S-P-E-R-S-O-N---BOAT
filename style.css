@@ -96,7 +96,7 @@
 /* Styling för kontaktsektionen */
 .contact-section {
   padding: 50px 20px;
-  background-color: rgb(36, 147, 162, 0.24);
+  background-color: rgba(36, 147, 162, 0.24);
   text-align: center;
 }
 
@@ -110,17 +110,36 @@ form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 600px;
+  max-width: 800px; /* Öka bredden om du vill ha mer utrymme */
   margin: 0 auto;
   font-family: "Lucida Bright", serif;
 }
 
-form label {
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.input-wrapper {
+  flex: 1;
+  min-width: calc(50% - 15px); /* Hanterar gapet */
+  box-sizing: border-box;
+}
+
+.input-wrapper.full-width {
+  flex: 1;
+  min-width: 100%;
+}
+
+.input-wrapper label {
+  display: block;
+  margin-bottom: 5px;
   text-align: left;
 }
 
-form input,
-form textarea {
+.input-wrapper input,
+.input-wrapper textarea {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -128,12 +147,18 @@ form textarea {
   width: 100%;
 }
 
-form textarea {
+.input-wrapper textarea {
   height: 100px;
   resize: none;
 }
 
-form button {
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end; /* Högerjustera knappen */
+  align-items: center;
+}
+
+button {
   padding: 10px 20px;
   font-size: 15px;
   color: white;
@@ -142,16 +167,94 @@ form button {
   border-radius: 5px;
   cursor: pointer;
   font-family: "Lucida Bright", serif;
-  width: 45%;
-  margin-left: 10.4rem;
 }
 
-form button:hover {
+button:hover {
+  background-color: #dba50e;
+}
+
+/* Styling för tjänstesektionen */
+.services-section {
+  padding: 50px 20px;
+  background-color: rgba(87, 189, 162, 0.4);
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: "Lucida Bright", serif;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "Lucida Handwriting", cursive;
+}
+
+.service p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-family: "Lucida Bright", serif;
+}
+
+.service a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  color: white;
+  background-color: #dcb13c;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Lucida Bright", serif;
+}
+
+.service a.button:hover {
   background-color: #dba50e;
 }
 
 /* För mobil vy */
 @media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+
+  .input-wrapper {
+    min-width: 100%;
+  }
+
+  .button-wrapper {
+    justify-content: center; /* Centrerar knappen på små skärmar */
+  }
+
   .home-content {
     padding-top: 12rem;
   }
@@ -179,6 +282,15 @@ form button:hover {
 }
 
 @media (max-width: 480px) {
+  .input-wrapper {
+    min-width: 100%;
+  }
+
+  button {
+    width: 100%; /* Gör knappen fullbredd på små skärmar */
+    margin-top: 10px;
+  }
+
   .select-container {
     grid-template-columns: 1fr;
   }
